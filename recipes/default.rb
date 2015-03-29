@@ -19,5 +19,5 @@
 log "hello from the motd cookbook default recipe"
 
 file "/etc/motd" do
-  content "GREETINGS FROM MARS"
+  content "GREETINGS FROM PLUTO"
 end
