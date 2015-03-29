@@ -18,15 +18,12 @@
 
 log "hello from the motd cookbook default recipe"
 
-motd = <<END
- _______   _______  __       __  ____    ____  _______ .______     ____    ____ 
-|       \ |   ____||  |     |  | \   \  /   / |   ____||   _  \    \   \  /   / 
-|  .--.  ||  |__   |  |     |  |  \   \/   /  |  |__   |  |_)  |    \   \/   /  
-|  |  |  ||   __|  |  |     |  |   \      /   |   __|  |      /      \_    _/   
-|  '--'  ||  |____ |  `----.|  |    \    /    |  |____ |  |\  \----.   |  |     
-|_______/ |_______||_______||__|     \__/     |_______|| _| `._____|   |__|     
-END
+# motd = 'Hello, everybody!'
 
-file "/etc/motd" do
-  content motd
+# file "/etc/motd" do
+#   content motd
+# end
+
+template "/etc/motd" do
+  source "delivery.txt"
 end
