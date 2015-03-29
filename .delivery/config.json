@@ -7,7 +7,6 @@
   },
   "skip_phases": [
     "smoke",
-    "provision",
     "security",
     "quality"
   ],
