@@ -17,3 +17,7 @@
 # limitations under the License.
 
 log "hello from the motd cookbook default recipe"
+
+file "/etc/motd" do
+  content "GREETINGS EARTHLING"
+end
