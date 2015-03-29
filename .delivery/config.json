@@ -10,5 +10,10 @@
     "provision",
     "security",
     "quality"
-  ]
+  ],
+    "delivery-truck": {
+        "publish": {
+            "chef_server": true
+        }
+    }
 }
