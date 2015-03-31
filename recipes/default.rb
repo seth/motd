@@ -18,7 +18,7 @@
 
 log "hello from the motd cookbook default recipe"
 
-motd = 'HELLO, everybody!'
+motd = 'HELLO, Santa Clara!'
 
 file "/etc/motd" do
   content motd
