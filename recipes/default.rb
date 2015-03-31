@@ -18,12 +18,12 @@
 
 log "hello from the motd cookbook default recipe"
 
-motd = 'HELLO, Tuesday in Santa Clara!'
+# motd = 'HELLO, Tuesday in Santa Clara!'
 
-file "/etc/motd" do
-  content motd
-end
-
-# template "/etc/motd" do
-#   source "delivery.txt"
+# file "/etc/motd" do
+#   content motd
 # end
+
+template "/etc/motd" do
+  source "delivery.txt"
+end
