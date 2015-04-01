@@ -8,7 +8,8 @@
   "skip_phases": [
     "smoke",
     "security",
-    "quality"
+    "quality",
+    "functional"
   ],
     "delivery-truck": {
         "publish": {
