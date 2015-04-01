@@ -18,7 +18,7 @@
 
 log "hello from the motd cookbook default recipe"
 
-motd = "*" * 20 + '\nHELLO, ChefConf!\n' + "*" * 20
+motd = ("*" * 20) + "\n\nHELLO, ChefConf!\n\n" + ("*" * 20)
 
 file "/etc/motd" do
   content motd
