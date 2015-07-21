@@ -1,0 +1,6 @@
+enterprise = "local"
+git_port = "8989"
+organization = "sandbox"
+pipeline = "master"
+server = "delivery.local"
+user = "you"
